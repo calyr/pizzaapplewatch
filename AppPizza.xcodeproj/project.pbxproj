@@ -20,6 +20,11 @@
 		CF72BABC1D2165F5006F7F1F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BABB1D2165F5006F7F1F /* ExtensionDelegate.swift */; };
 		CF72BABE1D2165F5006F7F1F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BABD1D2165F5006F7F1F /* NotificationController.swift */; };
 		CF72BAC01D2165F5006F7F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF72BABF1D2165F5006F7F1F /* Assets.xcassets */; };
+		CF72BAD01D217612006F7F1F /* MasaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BACF1D217612006F7F1F /* MasaInterfaceController.swift */; };
+		CF72BAD21D217781006F7F1F /* Pizzadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BAD11D217781006F7F1F /* Pizzadata.swift */; };
+		CF72BAD41D217FE2006F7F1F /* QuesoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BAD31D217FE2006F7F1F /* QuesoInterfaceController.swift */; };
+		CF72BAD61D218654006F7F1F /* IngredientesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BAD51D218654006F7F1F /* IngredientesInterfaceController.swift */; };
+		CF72BAD81D21B4AE006F7F1F /* ConfirmacionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF72BAD71D21B4AE006F7F1F /* ConfirmacionInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +88,11 @@
 		CF72BABD1D2165F5006F7F1F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		CF72BABF1D2165F5006F7F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF72BAC11D2165F5006F7F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF72BACF1D217612006F7F1F /* MasaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaInterfaceController.swift; sourceTree = "<group>"; };
+		CF72BAD11D217781006F7F1F /* Pizzadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizzadata.swift; sourceTree = "<group>"; };
+		CF72BAD31D217FE2006F7F1F /* QuesoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoInterfaceController.swift; sourceTree = "<group>"; };
+		CF72BAD51D218654006F7F1F /* IngredientesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesInterfaceController.swift; sourceTree = "<group>"; };
+		CF72BAD71D21B4AE006F7F1F /* ConfirmacionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +165,11 @@
 				CF72BABF1D2165F5006F7F1F /* Assets.xcassets */,
 				CF72BAC11D2165F5006F7F1F /* Info.plist */,
 				CF72BAB71D2165F5006F7F1F /* Supporting Files */,
+				CF72BACF1D217612006F7F1F /* MasaInterfaceController.swift */,
+				CF72BAD11D217781006F7F1F /* Pizzadata.swift */,
+				CF72BAD31D217FE2006F7F1F /* QuesoInterfaceController.swift */,
+				CF72BAD51D218654006F7F1F /* IngredientesInterfaceController.swift */,
+				CF72BAD71D21B4AE006F7F1F /* ConfirmacionInterfaceController.swift */,
 			);
 			path = "AppPizza WatchKit Extension";
 			sourceTree = "<group>";
@@ -310,7 +325,12 @@
 			files = (
 				CF72BABE1D2165F5006F7F1F /* NotificationController.swift in Sources */,
 				CF72BABC1D2165F5006F7F1F /* ExtensionDelegate.swift in Sources */,
+				CF72BAD21D217781006F7F1F /* Pizzadata.swift in Sources */,
+				CF72BAD41D217FE2006F7F1F /* QuesoInterfaceController.swift in Sources */,
 				CF72BABA1D2165F5006F7F1F /* InterfaceController.swift in Sources */,
+				CF72BAD81D21B4AE006F7F1F /* ConfirmacionInterfaceController.swift in Sources */,
+				CF72BAD61D218654006F7F1F /* IngredientesInterfaceController.swift in Sources */,
+				CF72BAD01D217612006F7F1F /* MasaInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

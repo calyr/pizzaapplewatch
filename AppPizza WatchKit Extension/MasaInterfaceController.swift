@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  AppPizza WatchKit Extension
+//  MasaInterfaceController.swift
+//  AppPizza
 //
 //  Created by Roberto Carlos Callisaya Mamani on 6/27/16.
 //  Copyright © 2016 Roberto Carlos Callisaya Mamani. All rights reserved.
@@ -10,16 +10,19 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
-
-    @IBOutlet var btntam: WKInterfaceButton!
-    @IBOutlet var tamaño: WKInterfaceLabel!
-    var tamañodata : [String:String] = [ "tamano":"Chica" ]
+class MasaInterfaceController: WKInterfaceController {
+    
+    @IBOutlet var btnmasa: WKInterfaceButton!
     var pizza = Pizzadata()
+    @IBOutlet var masa: WKInterfaceLabel!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        pizza.tamaño = "Chica"
+        //let object = context as! [String:AnyObject]
+        print(String(context))
+        pizza = context as! Pizzadata
+        pizza.tipomasa = "delgada"
+        //object.tamaño = "Lo que sea"
+        pizza.mostrar()
         // Configure interface objects here.
     }
 
@@ -28,25 +31,26 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
     }
 
-    @IBAction func tamañoPizza(value: Float) {
-        btntam.setEnabled(true)
+    @IBAction func cambiarMasa(value: Float) {
+        btnmasa.setEnabled(true)
 
         if(value == 1){
-            tamaño.setText("Chica")
-            pizza.tamaño =  "Chica"
+            masa.setText("delgada")
+            pizza.tipomasa = "delgada"
         }else if(value == 2 ){
-           tamaño.setText("Mediana")
-            pizza.tamaño =  "Mediana"
+            masa.setText(" crujiente")
+            pizza.tipomasa = "crujiente"
 
         }else if(value == 3){
-            tamaño.setText("Grande")
-            pizza.tamaño =  "Grande"
+            masa.setText(" gruesa")
+            pizza.tipomasa = "gruesa"
+
         }else{
-            pizza.tamaño = ""
-            tamaño.setText("Favor seleccionar")
-             btntam.setEnabled(false)
+            pizza.tipomasa = ""
+            btnmasa.setEnabled(false)
+
+            masa.setText("Favor seleccionar")
         }
-        
     }
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
